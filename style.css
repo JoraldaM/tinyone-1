@@ -1,0 +1,44 @@
+:root {
+    --yellow:#fcdb00;
+    --black: black;
+  }
+
+body {
+  letter-spacing: 0px;
+}
+
+header,
+.btn {
+  background: var(--yellow);
+}
+img {
+  max-height: 400px;
+  max-width: 250px;
+}
+a .fab{
+    background: var(--black);
+    color: var(--yellow);
+   
+}
+.yellowText{
+    color: var(--yellow);
+}
+p{
+    font-size: 14px;
+}
+  footer{
+      background: var(--black);
+  }
+  .carousel-indicators button {
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50%;
+  }
+  .carousel-control-prev, .carousel-control-next{
+    max-height: 600px;
+  }
+  @media screen and (max-width: 750px) {
+    .footer, .feature{
+      text-align: center;
+    }
+}
