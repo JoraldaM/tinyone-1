@@ -1,6 +1,7 @@
 :root {
     --yellow:#fcdb00;
     --black: black;
+    --white: white;
   }
 
 body {
@@ -37,8 +38,34 @@ p{
   .carousel-control-prev, .carousel-control-next{
     max-height: 600px;
   }
+
+  .btn, .btn:link, .btn:visited {
+    background-color: var(--yellow);
+    color: var(--black);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.5s;
+    position: relative;
+    font-size: 15px;
+    border: none;
+    cursor: pointer; }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--white);
+    color: var(--yellow)}
+
+  .fa-facebook-square:hover, .fa-twitter-square:hover, .fa-google-plus-square:hover, .fa-pinterest-square:hover{
+      transform: translateY(-3px);
+    }
+
   @media screen and (max-width: 750px) {
     .footer, .feature{
       text-align: center;
     }
 }
+
